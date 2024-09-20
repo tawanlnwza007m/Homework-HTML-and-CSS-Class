@@ -1,0 +1,141 @@
+/* จัดการ navbar-collapse */
+.collapse.navbar-collapse {
+    display: flex;
+    justify-content: space-between; /* กระจายเนื้อหาระหว่างซ้ายและขวา */
+    align-items: center; /* จัดให้เนื้อหาตรงกลางในแนวตั้ง */
+}
+
+
+/* เพิ่มกรอบล้อมรอบเมนูทั้งหมด */
+.navbar-nav {
+    display: flex;
+    gap: 15px; /* เว้นระยะห่างระหว่างแต่ละเมนู */
+    padding: 5px 0; /* เพิ่มระยะห่างบนล่าง */
+    border-radius: 20px; /* ทำให้มุมโค้ง */
+    background-color: #f0f0f0; /* เปลี่ยนพื้นหลังเมนูทั้งหมดเป็นสีเทาอ่อน */
+    margin: 0 auto; /* ทำให้เมนูอยู่ตรงกลาง */
+    max-width: fit-content; /* กำหนดความกว้างสูงสุดตามเนื้อหา */
+}
+
+.nav-item {
+    list-style-type: none; /* ยกเลิก bullet list ของ <li> */
+}
+
+.nav-link {
+    text-decoration: none;
+    color: black; /* เปลี่ยนสีข้อความเป็นสีดำ */
+    padding: 10px 20px;
+    background-color: #d3d3d3; /* เปลี่ยนพื้นหลังของลิงก์แต่ละเมนูเป็นสีเทาอ่อน */
+    border-radius: 20px; /* ทำให้มุมของแต่ละปุ่มโค้ง */
+    transition: all 0.3s ease; /* ทำให้การเปลี่ยนแปลงนุ่มนวล */
+    border: none; /* ลบเส้นขอบ */
+}
+
+.nav-link:hover {
+    background-color: #4b4b4b; /* เปลี่ยนสีพื้นหลังเมื่อ hover เป็นสีเทาเข้มขึ้น */
+}
+
+.nav-item:active, .nav-link:active {
+    background-color: #a0a0a0; /* เปลี่ยนสีพื้นหลังเมื่อคลิกเป็นสีเทาเข้ม */
+    box-shadow: 0 0 5px rgba(255, 255, 255, 0.5); /* เพิ่มเงาเล็กน้อยเมื่อคลิก */
+}
+
+.nav-link:focus {
+    outline: none;
+}
+
+/* โลโก้ */
+.navbar-brand {
+    margin-left: 10px; /* เว้นระยะห่างจากขอบเว็บด้านซ้าย */
+}
+
+/* จัดรายการเมนู navbar-nav ให้อยู่ตรงกลาง */
+.navbar-nav {
+    display: flex;
+    justify-content: center; /* จัดเนื้อหาในแนวนอนให้ตรงกลาง */
+    flex-grow: 1; /* ให้ใช้พื้นที่ที่เหลือ */
+    margin: 0; /* ยกเลิก margin ของ ul */
+    gap: 15px; /* ระยะห่างระหว่างเมนู */
+}
+
+/* ปรับ styling ของปุ่ม search และ log in */
+.navbar-buttons {
+    display: flex;
+    gap: 15px; /* ระยะห่างระหว่างปุ่ม */
+    margin-right: 10px; /* เพิ่มระยะห่างจากขอบเว็บด้านขวา */
+}
+
+.navbar-buttons button {
+    background: none; /* ไม่มีพื้นหลัง */
+    border: none; /* ไม่มีกรอบ */
+    color: rgb(49, 48, 48); /* สีของปุ่ม */
+    cursor: pointer; /* เปลี่ยนเคอร์เซอร์เป็นรูปมือเมื่อ hover */
+    font-size: 16px; /* ขนาดข้อความ */
+    padding: 10px; /* เพิ่มระยะห่างในปุ่ม */
+}
+
+.navbar-buttons button:hover {
+    color: #b7a8a8; /* เปลี่ยนสีปุ่มเมื่อ hover */
+}
+
+
+/* จัดการ section #myimages */
+#myimages {
+    display: flex; /* ใช้ flex เพื่อจัดเรียงรูปภาพในแนวนอน */
+    justify-content: center; /* จัดกลางรูปภาพ */
+    align-items: center; /* จัดกลางในแนวตั้ง */
+    padding: 20px; /* เว้นระยะห่างจากขอบ section */
+}
+
+#myimages a {
+    flex: 1; /* ทำให้ลิงก์มีขนาดเท่ากัน */
+    margin: 5px; /* เว้นระยะห่างระหว่างลิงก์ */
+}
+
+#myimages img {
+    width: 100%; /* ขยายรูปภาพให้เต็มความกว้างของลิงก์ */
+    height: auto; /* ให้สูงของรูปภาพปรับอัตโนมัติตามความกว้าง */
+    border-radius: 10px; /* ทำให้มุมรูปภาพโค้งเล็กน้อย */
+}
+
+
+.fw-bolder {
+    font-size: 5.5rem; /* ปรับขนาดข้อความให้ใหญ่ขึ้น */
+    text-align: center; /* จัดให้ข้อความอยู่ตรงกลาง */
+    margin: 0; /* ยกเลิก margin ถ้ามี */
+    padding: 20px 0; /* เพิ่มระยะห่างด้านบนและล่าง */
+}
+
+
+/* <!-- Header--> */
+.veggie-burger-button {
+    background-color: black; /* พื้นหลังปุ่มสีดำ */
+    border: none; /* ไม่มีกรอบ */
+    border-radius: 50%; /* ทำให้เป็นรูปวงกลม */
+    width: 50px; /* ขนาดความกว้างของปุ่ม */
+    height: 50px; /* ขนาดความสูงของปุ่ม */
+    display: flex; /* ใช้ flex เพื่อจัดสัญลักษณ์กลางปุ่ม */
+    align-items: center; /* จัดให้กลางในแนวตั้ง */
+    justify-content: center; /* จัดให้กลางในแนวนอน */
+    cursor: pointer; /* เปลี่ยนเคอร์เซอร์เป็นรูปมือเมื่อ hover */
+    margin-left: 20px; /* เว้นระยะห่างจากด้านซ้าย */
+    margin-top: 10px; /* เว้นระยะห่างจากด้านล่างของ header */
+}
+
+.burger-icon {
+    color: white; /* สีของสัญลักษณ์เป็นสีขาว */
+    font-size: 24px; /* ขนาดของสัญลักษณ์ */
+}
+
+
+nav {
+    border-bottom: 2px solid #ccc; /* เส้นแบ่งใต้ nav */
+}
+
+header {
+    border-bottom: 2px solid #ccc; /* เส้นแบ่งใต้ header */
+}
+
+#myimages {
+    border-top: 2px solid #ccc; /* เส้นแบ่งบน myimages section */
+}
